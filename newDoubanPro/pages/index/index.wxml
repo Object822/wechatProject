@@ -1,4 +1,12 @@
-<!--index.wxml-->
+<import src="../../template/rankFilm/rankFilm.wxml"/>
+<!-- index.wxml -->
 <view class="container">
-
+    <swiper class="swiper_wrap" indicator-dots="true" autoplay="true" interval="2000" duration="500" indicator-dots="true" circular="true">
+        <block wx:for="{{allRank.subjects}}" wx:for-item="subject" wx:for-index="sub" wx:key="sub">
+            <swiper-item>
+                <image class="swiper_img" src="{{subject.images.small}}" mode="widthFix" lazy-load="true" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <template is="rankFilm" data="{{subjects}}"></template>
 </view>

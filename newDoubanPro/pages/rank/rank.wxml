@@ -1,0 +1,22 @@
+<view>
+    <view class="" wx:for="{{rankFilms}}" wx:key="index">
+        <navigator url="/pages/detail/detail?title={{rankFilms[index].title}}&id={{rankFilms[index].id}}" hover-class="none">
+            <view class="">
+                <image class="" src="{{item.images.small}}" mode="widthFix" lazy-load="true" />
+            </view>
+            <view class="">
+                <view class="">
+                    <text class="">{{item.title}}</text>
+                    <text class="">{{item.rating.average}}</text>
+                </view>
+                <text class="">{{item.original_title}}</text>
+                <text class="">
+                    <text class="">导演</text>
+                    <text class="">安娜请求我二群翁</text>
+                </text>
+            </view>
+        </navigator>
+    </view>
+    <i-load-more tip="拼命加载中..." loading="{{ true }}" wx:if="{{isShow}}"/>
+    <i-load-more tip="哥是有底线滴!!!" loading="{{ false }}" wx:if="{{end}}"/>
+</view>

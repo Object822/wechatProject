@@ -1,0 +1,31 @@
+<!-- pages/detail/detail.wxml -->
+<image class="mask_img" src="{{filmDetail.images.large}}" mode="scaleToFill" />
+<view class="detail_wrap">
+    <view>
+        <view class="film_img">
+            <image class="" src="{{filmDetail.images.medium}}" mode="widthFix" lazy-load="true" />
+        </view>
+        <view class="film_text">
+            <text class="">{{filmDetail.title}}</text>
+        </view>
+    </view>
+    <view class="goods_wrap">
+        <text class="">评分: {{filmDetail.rating.average}}</text>
+        <view class="">
+            <text class="">导演:</text>
+            <text class="" wx:for="{{filmDetail.directors}}" wx:for-item="author" wx:for-index="dir" wx:key="dir">
+                {{author.name}}
+            </text>
+        </view>
+        <view class="">
+            <text class="">主演:</text>
+            <text class="" wx:for="{{filmDetail.casts}}" wx:for-item="protagonist" wx:for-index="pro" wx:key="pro">
+                {{protagonist.name}}
+            </text>
+        </view>
+    </view>
+    <view class="abstract_wrap">
+        <view class="">摘要:</view>
+        <text class="abstract">{{filmDetail.summary}}</text>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<!-- template/rankFilm/rankFilm.wxml -->
+<template name="rankFilm">
+    <view class="rank_wrap" wx:for="{{subjects}}" wx:for-item="all" wx:key="index">
+        <navigator url="/pages/rank/rank?index={{index}}&title={{subjects[index].title}}" hover-class="none">
+            <view class="rank_title">
+                <text class="">{{all.title}}</text>
+                <i-icon type="enter" />
+            </view>
+        </navigator>
+        <scroll-view class="" scroll-x="true">
+            <view class="rank_content">
+                <view class="content" wx:for="{{all.subjects}}" wx:for-item="rankMovie" wx:for-index="rank" wx:key="rank">
+                    <navigator url="/pages/detail/detail?title={{rankMovie.title}}&id={{rankMovie.id}}"  hover-class="none">
+                        <view class="rank_img">
+                            <image src="{{rankMovie.images.small}}" lazy-load="true" />
+                        </view>
+                        <view class="rank_text">
+                            <text class="">{{rankMovie.title}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</template>

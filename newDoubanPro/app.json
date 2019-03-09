@@ -2,26 +2,44 @@
   "pages":[
     "pages/index/index",
     "pages/collect/collect",
-    "pages/user/user"
+    "pages/user/user",
+    "template/rankFilm/rankFilm",
+    "pages/detail/detail",
+    "pages/rank/rank"
   ],
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "豆瓣评分",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 0
   },
   "tabBar": {
+    "selectedColor": "#0c0",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeL.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/collect/collect",
+        "iconPath": "images/搜索.png",
+        "selectedIconPath": "images/搜索L.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "iconPath": "images/收藏.png",
+        "selectedIconPath": "images/收藏L.png",
         "text": "收藏"
       },
       {
         "pagePath": "pages/collect/collect",
+        "iconPath": "images/people.png",
+        "selectedIconPath": "images/peopleL.png",
         "text": "个人中心"
       }
     ]

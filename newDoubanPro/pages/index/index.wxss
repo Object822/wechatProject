@@ -1,21 +1,65 @@
-/**index.wxss**/
-.userinfo {
+.container {
+  background: #e4e4e4;
+}
+
+.container .swiper_wrap {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 30rpx;
+}
+
+.swiper_img {
+  width: 100%;
+}
+
+.rank_wrap {
+  width: 100%;
+  padding: 10rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+
+.rank_wrap .rank_title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  line-height: 20rpx;
+  margin-bottom: 20rpx;
+}
+.rank_title text {
+  font-size: 20rpx;
+  color: #333;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.rank_title i-icon {
+  font-size: 20rpx;
+  color: gray;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.rank_content {
+  display: flex;
+  font-size: 0;
+  /* overflow: hidden; */
 }
 
-.usermotto {
-  margin-top: 200px;
+.content {
+  margin: 0 10rpx;
+}
+
+.rank_content .rank_img {
+  width: 200rpx;
+  height: 280rpx;
+}
+
+.rank_content .rank_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.rank_text {
+  text-align: center;
+}
+
+.rank_text text {
+  font-size: 20rpx;
 }
