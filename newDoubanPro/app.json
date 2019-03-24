@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/bootPage/bootPage",
     "pages/index/index",
     "pages/collect/collect",
     "pages/user/user",
@@ -37,7 +38,7 @@
         "text": "收藏"
       },
       {
-        "pagePath": "pages/collect/collect",
+        "pagePath": "pages/user/user",
         "iconPath": "images/people.png",
         "selectedIconPath": "images/peopleL.png",
         "text": "个人中心"

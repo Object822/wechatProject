@@ -48,6 +48,6 @@
     color: black;
     margin-bottom: 30rpx;
 }
-.abstract::before {
-    content: "   ";
+.abstract{
+    text-indent: 40rpx;
 }

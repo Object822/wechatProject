@@ -26,6 +26,8 @@
     </view>
     <view class="abstract_wrap">
         <view class="">摘要:</view>
-        <text class="abstract">{{filmDetail.summary}}</text>
+        <textarea class="abstract">
+            {{filmDetail.summary}}
+        </textarea>
     </view>
 </view>

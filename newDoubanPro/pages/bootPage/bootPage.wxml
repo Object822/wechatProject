@@ -1,0 +1,12 @@
+<view class="boot_wrap">
+    <swiper indicator-dots="{{true}}" autoplay="{{false}}" duration="{{500}}" class="swiper_wrap">
+        <block wx:for="{{bootPages.subjects}}" wx:key="index">
+            <swiper-item>
+                <image class="boot_img" src="{{item.images.large}}" mode="scaleToFill" />
+                <navigator url="/pages/index/index" hover-class="navigator-hover" open-type="switchTab" class="click_in" wx:if="{{index == (bootPages.subjects.length-1)}}">
+                    <view>立即体验</view>
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
